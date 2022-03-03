@@ -17,7 +17,7 @@ My original ideia is to build an App to practice what I'm learning from Uncle Bo
 ### Dependency Injection: Get It or GetX
 I'm used to developing with the [Get It package](https://pub.dev/packages/get_it) for dependency injection, and since I use [GetX package](https://pub.dev/packages/get) for state and route management I was figuring out if I could use only GetX for everything.
 
-Well, after some analysis of the GetX documentation, I figured that the benefits of getting rid of Get It isn't worth the cost. My opinion is that the Get It have a really quick way to pass dependencies to classes. For example, if I create the class DoSomethingUseCase and want to pass another class as an instance variable, that I'll call SomeRepository, I just have to do:
+Well, after some analysis of the GetX documentation, I figured that the benefits of getting rid of Get It isn't worth the cost. My opinion is that Get It presents a really quick way to pass dependencies to classes. For example, if I create the class DoSomethingUseCase and want to pass another class as an instance variable, that I'll call SomeRepository, I just have to do:
 
 ```
 final sl = GetIt.instance;
